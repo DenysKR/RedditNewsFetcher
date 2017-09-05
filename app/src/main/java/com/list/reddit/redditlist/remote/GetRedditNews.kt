@@ -13,7 +13,7 @@ import retrofit2.http.Query
 
 interface GetRedditNews {
     @GET("/top.json")
-    fun getTop(@Query("after") after: String,
-               @Query("limit") limit: String)
+    fun getNews(@Query("after") after: String,
+                @Query("limit") limit: String)
             : Call<RedditNews>;
 }
